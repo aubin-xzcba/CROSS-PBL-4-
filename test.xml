@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Démarche PBL4 - Choix Moteur">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <mxCell id="2" value="CHOIX ET DIMENSIONNEMENT&#xa;DU MOTEUR (PBL4)" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;fontStyle=1;fontSize=16" vertex="1" parent="1">
+          <mxGeometry x="314" y="540" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="3" value="1. ANALYSE DU BESOIN&#xa;(Activité 0 &amp; 3)" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="339" y="380" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Résistances (N) :&#xa;Fr = F_roul + F_pente + F_aéro" style="whiteSpace=wrap;html=1;fillColor=#fff2cc" vertex="1" parent="1">
+          <mxGeometry x="324" y="280" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Données Excel :&#xa;- Masse véhicule (kg)&#xa;- SCx (Aérodynamisme)&#xa;- Pente (%)" style="whiteSpace=wrap;html=1;fillColor=#fff2cc" vertex="1" parent="1">
+          <mxGeometry x="514" y="310" width="140" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="6" value="2. CARACTÉRISTIQUES&#xa;MOTEUR (Activité 1 &amp; 2)" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="580" y="550" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Formule Puissance :&#xa;P (W) = C (N.m) x ω (rad/s)" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4" vertex="1" parent="1">
+          <mxGeometry x="780" y="520" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Points clés Excel :&#xa;- Couple Max (Nm)&#xa;- Puissance Max (kW)&#xa;- Régime nominal" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4" vertex="1" parent="1">
+          <mxGeometry x="780" y="580" width="150" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="9" value="3. TRANSMISSION&#xa;(Activité 4 &amp; 5)" style="rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="339" y="700" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Loi de Vitesse :&#xa;V (m/s) = R_roue * (ω_mot / k)" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc" vertex="1" parent="1">
+          <mxGeometry x="324" y="800" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Rendement (η) :&#xa;P_roue = P_mot * η_trans" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc" vertex="1" parent="1">
+          <mxGeometry x="514" y="770" width="160" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="12" value="4. INTERFACE SYSTÈMES&#xa;(Variables liées)" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="70" y="550" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="Refroidissement :&#xa;P_dissipée = P_mot * (1 - η_mot)" style="whiteSpace=wrap;html=1;fillColor=#f8cecc" vertex="1" parent="1">
+          <mxGeometry x="-130" y="500" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Batterie / Autonomie :&#xa;E (Wh) = P_mot * temps&#xa;I (A) = P_élec / U_batt" style="whiteSpace=wrap;html=1;fillColor=#f8cecc" vertex="1" parent="1">
+          <mxGeometry x="-130" y="560" width="190" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="15" edge="1" parent="1" source="2" target="3"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="16" edge="1" parent="1" source="3" target="4"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="17" edge="1" parent="1" source="3" target="5"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="18" edge="1" parent="1" source="2" target="6"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="19" edge="1" parent="1" source="6" target="7"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="20" edge="1" parent="1" source="6" target="8"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="21" edge="1" parent="1" source="2" target="9"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="22" edge="1" parent="1" source="9" target="10"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="23" edge="1" parent="1" source="9" target="11"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="24" edge="1" parent="1" source="2" target="12"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="25" edge="1" parent="1" source="12" target="13"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="26" edge="1" parent="1" source="12" target="14"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
